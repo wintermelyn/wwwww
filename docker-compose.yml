@@ -1,0 +1,10 @@
+websocket-server:
+    build:
+      context: ./AAAASS
+      dockerfile: Dockerfile
+    container_name: websocket-server
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    networks:
+      - app-network
