@@ -8,7 +8,7 @@ const httpsOptions = {
     cert: fs.readFileSync('cert1.pem')
 };
 const server = https.createServer(httpsOptions);
-const port = 80;
+const port = 8090;
 const clients = {};
 const wss = new WebSocketServer({ server });
 
