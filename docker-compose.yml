@@ -3,7 +3,7 @@ services: # The containers we are going to run
     build:
       context: ./AAAASS
       dockerfile: Dockerfile
-    container_name: websocket-server
+    container_name: websocket-server2
     restart: unless-stopped
     ports:
       - "80:80"
