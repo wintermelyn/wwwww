@@ -1,5 +1,5 @@
 services: # The containers we are going to run
-  websocket-server:
+  websocket-server2:
     build:
       context: ./AAAASS
       dockerfile: Dockerfile
