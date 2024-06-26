@@ -1,4 +1,5 @@
-websocket-server:
+services: # The containers we are going to run
+  websocket-server:
     build:
       context: ./AAAASS
       dockerfile: Dockerfile
@@ -8,3 +9,7 @@ websocket-server:
       - "80:80"
     networks:
       - app-network
+
+networks: # All the networks that connects our containers
+  app-network:
+    driver: bridge
