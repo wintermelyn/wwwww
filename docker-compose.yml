@@ -6,7 +6,7 @@ services: # The containers we are going to run
     container_name: websocket-server2
     restart: unless-stopped
     ports:
-      - "8900:8090"
+      - "8090:8090"
     networks:
       - app-network
 
