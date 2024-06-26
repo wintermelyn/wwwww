@@ -4,7 +4,7 @@ const fs = require('fs');
 const { WebSocketServer } = require('ws');
 const uuidv4 = require('uuid').v4;
 const httpsOptions = {
-    key: fs.readFileSync('key_arquisisg20.pem'),
+    key: fs.readFileSync('privkey1.pem'),
     cert: fs.readFileSync('cert1.pem')
 };
 const server = https.createServer(httpsOptions);
